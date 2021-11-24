@@ -87,3 +87,11 @@ button {
 .reprovado {
   color: red;
 }
+
+.footer {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.275rem;
+  font-weight: bold;
+  color: #fff;
+}

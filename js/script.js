@@ -11,14 +11,13 @@ function verifyField(event) {
   calculeAverage();
 }
 
-
 function calculeAverage() {
   const tr = document.querySelectorAll('tr');
   
-  const incrementoMagico = 5;
-  let n = 0;
+  const incrementoIndexForm= 5;
+  let n = 0; // indexForm
 
-  // percorre o forumlario pegando só os campos que interessam
+  // percorre o formulario pegando só os campos que interessam
   // e preenche o campo média com a média das notas
   for (let i = 1; i < tr.length; i++) {
 
@@ -27,11 +26,14 @@ function calculeAverage() {
     let avg = (nota1 + nota2) / 2;
     document.forms[0].elements[n+4].value = avg;
 
+    document.forms[0].elements[n+4].classList.add('reprovado');
+
     if (avg >= 7) {
+      document.forms[0].elements[n+4].classList.remove('reprovado');
       document.forms[0].elements[n+4].classList.add('aprovado');
     } 
 
-    n += incrementoMagico;
+    n += incrementoIndexForm;
   }
 }
 
