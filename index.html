@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section class="luma">
+    <h1 class="title">Lançamento de notas</h1>
+
+    <form id="form">
+      <label for="disciplinas">Selecione a disciplina: </label>
+      <select name="disciplinas" id="disciplinas">
+        <option value="programacao">Programação de Computadores</option>
+        <option value="introducao">Introdução à Informática</option>
+        <option value="linguagens">Linguagens de Programação</option>
+      </select>
+      <table>
+        <tr>
+          <th>Aluno</th>
+          <th><label for="prova1" id="prova1">Prova1</label></th>
+          <th><label for="prova2" id="prova2">Prova2</label></th>
+          <th><label for="exame">Exame</label></th>
+          <th><label for="media" id="media">Media</label></th>
+          <th><label for="faltas">Faltas</label></th>
+        </tr>
+        <tr>
+          <td>Joana da Silva</td>
+          <td>
+            <input type="number" step="0.1" min="0" max="10" name="prova1" required>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="prova2"  required>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="exame" >
+          </td>
+          <td>
+            <input type="number" step="0.1" name="media" readonly>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="faltas" required>
+          </td>
+        </tr>
+        <tr>
+          <td>Maria do Carmo</td>
+          <td>
+            <input type="number" step="0.1" name="prova1" required>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="prova2"  required>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="exame" >
+          </td>
+          <td>
+            <input type="number" step="0.1" name="media" readonly>
+          </td>
+          <td>
+            <input type="number" step="0.1" name="faltas" required>
+          </td>
+        </tr>
+      </table>
+      <button>Salvar</button>
+      <button>Limpar</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p>Desenvolvido por Matheus Galote</p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

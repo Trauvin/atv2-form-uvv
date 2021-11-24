@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Mono&display=swap");
+
+:root {
+  --primary-color: #204345;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: var(--primary-color);
+}
+
+label {
+  font-family: "Roboto Mono", monospace;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+input {
+  max-width: 100px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+select {
+  font-family: "Open Sans", sans-serif;
+  color: var(--primary-color);
+  font-size: 1rem;
+  border: 3px solid var(--primary-color);
+  border-radius: 5px;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+th {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+td {
+  font-family: "Roboto Mono", monospace;
+  padding-right: 20px;
+}
+
+button {
+  margin-top: 20px;
+  margin-right: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #000;
+  color: #fff;
+  border-radius: 5px;
+  background: var(--primary-color);
+}
+
+.title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+}
+
+.luma {
+  max-width: 960px;
+  margin: 0 auto;
+  background: #ccc;
+  border-radius: 5px;
+  /* padding: 2px 0; */
+}
+
+#form {
+  padding: 10px;
+  display: block;
+}
+
+.invalid {
+  border: 2px solid red;
+}
+
+.aprovado {
+  color: darkgreen;
+}
+
+.reprovado {
+  color: red;
+}
